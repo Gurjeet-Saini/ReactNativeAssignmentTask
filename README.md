@@ -10,10 +10,10 @@ A cross-platform **React Native application built with Expo Router and TypeScrip
 * **React Native Unistyles v3**
 * **Expo Router** – File-based navigation
 * **Custom Design System**
-* **Custom Fonts** – Inter & Open Sans
+* **Custom Fonts** – Inter 
 * **Responsive Scaling**
 * **Light / Dark Theme Support**
-* **RTL / LTR Localization Utilities**
+
 
 ---
 
