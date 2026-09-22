@@ -6,6 +6,7 @@
 import '@/global.css';
 
 import { Platform } from 'react-native';
+import { ms } from '@/utils';
 
 export const Colors = {
   light: {
@@ -14,6 +15,15 @@ export const Colors = {
     backgroundElement: '#F0F0F3',
     backgroundSelected: '#E0E1E6',
     textSecondary: '#60646C',
+    tabActive: '#2563EB',
+    tabInactive: '#3E4958',
+    tabActiveBg: '#EFF5FF',
+    tabBarBg: '#FFFFFF',
+    bmiUnderweight: '#E6CCA9',
+    bmiNormal: '#A6F4C5',
+    bmiOverweight: '#FEDF89',
+    bmiObese: '#E8C2A8',
+    bmiPointer: '#101828',
   },
   dark: {
     text: '#ffffff',
@@ -21,6 +31,15 @@ export const Colors = {
     backgroundElement: '#212225',
     backgroundSelected: '#2E3135',
     textSecondary: '#B0B4BA',
+    tabActive: '#3B82F6',
+    tabInactive: '#9CA3AF',
+    tabActiveBg: '#1E293B',
+    tabBarBg: '#18191C',
+    bmiUnderweight: '#E6CCA9',
+    bmiNormal: '#A6F4C5',
+    bmiOverweight: '#FEDF89',
+    bmiObese: '#E8C2A8',
+    bmiPointer: '#F9FAFB',
   },
 } as const;
 
@@ -61,5 +80,5 @@ export const Spacing = {
   six: 64,
 } as const;
 
-export const BottomTabInset = Platform.select({ ios: 50, android: 80 }) ?? 0;
+export const BottomTabInset = Platform.select({ ios: ms(88), android: ms(96), default: ms(90) });
 export const MaxContentWidth = 800;
